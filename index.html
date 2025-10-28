@@ -1,56 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ONG Um Belo Dia Para Salvar Vidas - Transformando vidas através de projetos sociais.">
-  <title>ONG Um Belo Dia Para Salvar Vidas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ONG Um Belo Dia Para Salvar Vidas - Transformando vidas através de projetos sociais.">
+<title>ONG Um Belo Dia Para Salvar Vidas</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <header>
-    <img src="imagens/logovetorizado.png" width="90" height="90" alt="Logo da ONG Um Belo Dia Para Salvar Vidas">
-    <h1>ONG Um Belo Dia Para Salvar Vidas</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section>
-      <h2>Missão, Visão e Valores</h2>
-      <p><strong>Missão:</strong> Promover inclusão social e oportunidades através de projetos educativos e solidários.</p>
-      <p><strong>Visão:</strong> Ser referência em transformação social no Brasil até 2030.</p>
-      <p><strong>Valores:</strong> Solidariedade, Transparência e Comprometimento.</p>
-      <img src="imagens/roupas.png" width="150" height="150" alt="Voluntários em ação">
-    </section>
+<header>
+  <img src="imagens/logovetorizado.png" alt="Logo da ONG Um Belo Dia Para Salvar Vidas">
+  <h1>ONG Um Belo Dia Para Salvar Vidas</h1>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+  <label for="menu-toggle" class="menu-toggle">☰</label>
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li class="dropdown">
+        <a href="projetos.html" class="dropbtn">Projetos ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="projetos.html#alimentar">Projeto Alimentar Esperança</a></li>
+          <li><a href="projetos.html#futuro">Projeto Futuro Digital</a></li>
+        </ul>
+      </li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <section>
-      <h2>Histórico e Conquistas</h2>
-      <p>Desde 2012, a ONG Um Belo Dia Para Salvar Vidas atua em comunidades carentes, oferecendo cursos, apoio psicológico e doações.</p>
-      <ul>
-        <li>+500 famílias beneficiadas</li>
-        <li>+200 voluntários ativos</li>
-        <li>10 projetos em andamento</li>
-      </ul>
-    </section>
+<main class="container">
+  <section class="grid-12">
+    <h2>Missão, Visão e Valores</h2>
+    <p><strong>Missão:</strong> Promover inclusão social e oportunidades através de projetos educativos e solidários.</p>
+    <p><strong>Visão:</strong> Ser referência em transformação social no Brasil até 2030.</p>
+    <p><strong>Valores:</strong> Solidariedade, Transparência e Comprometimento.</p>
+    <img src="imagens/roupas.png" alt="Voluntários" class="img-media">
 
-    <section>
-      <h2>Contato</h2>
-      <address>
-        <p>Email: <a href="mailto:contato@umbelodiaparasalvarvidas.org">contato@umbelodiaparasalvarvidas.org</a></p>
-        <p>Telefone: (11) 99999-9999</p>
-        <p>Endereço: Rua Brilhante, 184 - São Paulo/SP</p>
-      </address>
-    </section>
-  </main>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 ONG Um Belo Dia Para Salvar Vidas - Todos os direitos reservados.</p>
-  </footer>
+  <section class="grid-12">
+    <h2>Histórico e Conquistas</h2>
+    <ul>
+      <li>+350 famílias beneficiadas.</li>
+      <li>+150 voluntários ativos.</li>
+      <li>Atualmente, contamos com dois projetos em andamento.</li>
+    </ul>
+  </section>
+
+  <section class="grid-12">
+    <h2>Contato</h2>
+    <address>
+      <p>Email: <a href="mailto:contato@umbelodiaparasalvarvidas.org">contato@umbelodiaparasalvarvidas.org</a></p>
+      <p>Telefone: (11) 99999-9999</p>
+      <p>Endereço: Rua Brilhante, 184 - São Paulo/SP</p>
+    </address>
+  </section>
+
+  <section class="grid-12">
+    <h2>Tipos de Participantes</h2>
+    <ul>
+      <li><span class="badge badge-voluntario">Voluntário</span> – pessoas que colaboram com seu tempo e habilidades</li>
+      <li><span class="badge badge-doador">Doador</span> – pessoas que contribuem com recursos para os projetos</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 ONG Um Belo Dia Para Salvar Vidas - Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>

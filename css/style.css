@@ -1,0 +1,110 @@
+
+/* DESIGN */
+
+:root {
+  --cor-primaria:#1dce3a;
+  --cor-secundaria:#a85e22;
+  --cor-terciaria:#42c46d;
+  --cor-quaternaria:#a5bccf;
+  --cor-neutra-clara:#f5f5f5;
+  --cor-neutra-escura:#333333;
+  --cor-neutra-media:#777777;
+  --cor-alerta:#f10a0a;
+  --cor-sucesso:#5fe023;
+
+  --font-h1:2.5rem;
+  --font-h2:2rem;
+  --font-h3:1.5rem;
+  --font-p:1rem;
+  --font-small:0.875rem;
+
+  --esp-8:8px;
+  --esp-16:16px;
+  --esp-24:24px;
+  --esp-32:32px;
+  --esp-48:48px;
+  --esp-64:64px;
+}
+
+/* BASE */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Arial,sans-serif;color:var(--cor-neutra-escura);background:#fff;line-height:1.6;}
+a{text-decoration:none;color:inherit;}
+
+/* HEADER E NAV */
+header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--cor-primaria);padding:var(--esp-16);color:#fff;}
+header img{width:100px;height:auto;}
+header h1{font-size:var(--font-h2);}
+nav ul{list-style:none;display:flex;gap:var(--esp-16);}
+nav li{position:relative;}
+nav a{color:#fff;font-weight:bold;}
+.menu-toggle{display:none;cursor:pointer;font-size:2rem;}
+.menu-toggle-checkbox{display:none;}
+.menu-toggle-checkbox:checked ~ nav ul{display:flex;flex-direction:column;}
+
+/* DROPDOWN */
+.dropdown-content{display:none;position:absolute;background:var(--cor-secundaria);top:100%;left:0;min-width:200px;border-radius:4px;flex-direction:column;}
+.dropdown:hover .dropdown-content{display:flex;}
+.dropdown-content li{padding:var(--esp-8);}
+
+/* GRID COM AS 12 COLUNAS */
+.container{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--esp-16);padding:var(--esp-32);}
+.grid-12{grid-column:1/-1;}
+.grid-6{grid-column:span 6;}
+
+/* SECTION AND CARDS */
+section{background:var(--cor-neutra-clara);padding:var(--esp-24);border-radius:8px;}
+.projects-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--esp-16);}
+.card{background:#fff;padding:var(--esp-16);border-radius:8px;text-align:center;}
+
+
+section img{max-width:100%;border-radius:8px;display:block;margin:var(--esp-16) auto;}
+
+/* BOTÕES */
+button,a{padding:var(--esp-8) var(--esp-16);border-radius:4px;border:none;cursor:pointer;text-align:center;background:var(--cor-secundaria);color:#f1f1f1;display:inline-block;}
+button:hover,a:hover{background:var(--cor-quaternaria);}
+button:focus{outline:2px solid var(--cor-primaria);}
+button:active{background:var(--cor-terciaria);}
+button:disabled{background:var(--cor-neutra-media);cursor:not-allowed;}
+
+/* FORMULÁRIOS */
+form{max-width:600px;margin:0 auto;background:#e4dede;padding:32px;border-radius:16px;}
+fieldset{border:none;margin-bottom:24px;}
+legend{font-size:1.25rem;font-weight:bold;margin-bottom:16px;color:var(--cor-primaria);}
+input,select{width:100%;padding:12px 16px;margin-bottom:16px;border:1px solid #c6ec9a;border-radius:12px;}
+input:focus,select:focus{border-color:var(--cor-primaria);outline:none;}
+
+/* RADIOS COM TEXTO À ESQUERDA */
+fieldset.interesse label{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;}
+
+/* MARCAÇÃO IMPORTANTE */
+.badge{padding:4px 8px;border-radius:12px;font-size:var(--font-small);color:#fff;}
+.badge-voluntario{background:var(--cor-primaria);}
+.badge-doador{background:var(--cor-secundaria);}
+
+/* FOOTER */
+footer{background:var(--cor-neutra-escura);color:#e7e2e2;text-align:center;padding:var(--esp-16);}
+
+/* RESPONSIVO */
+@media(max-width:1200px){.projects-grid{grid-template-columns:repeat(8,1fr);}.grid-6{grid-column:span 8;}}
+@media(max-width:1024px){.projects-grid{grid-template-columns:repeat(6,1fr);}.grid-6{grid-column:span 6;}}
+@media(max-width:768px){nav ul{display:none;flex-direction:column;gap:var(--esp-8);width:100%;}.menu-toggle{display:block;}.projects-grid{grid-template-columns:repeat(12,1fr);}.grid-6{grid-column:span 12;}}
+@media(max-width:480px){section{padding:var(--esp-16);}header h1{font-size:var(--font-h3);}}
+@media(max-width:320px){body{font-size:0.9rem;}}
+
+
+/* EDIÇÃO DE TAMANHO DE IMAGEM */
+.img-pequena {
+    width: 400px;
+    height: auto;
+}
+
+.img-media {
+    width: 500px;
+    height: auto;
+}
+
+.img-grande {
+    width: 400px;
+    height: auto;
+}
