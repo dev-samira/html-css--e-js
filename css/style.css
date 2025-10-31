@@ -95,22 +95,32 @@ footer{background:var(--cor-neutra-escura);color:#e7e2e2;text-align:center;paddi
 
 /* EDIÇÃO DE TAMANHO DE IMAGEM */
 .img-pequena {
-    width: 400px;
+    /* width: 300px; */
     height: auto;
 }
 
 .img-media {
-    width: 500px;
+    /* width: 500px; */
     height: auto;
 }
 
 .img-grande {
-    width: 400px;
+    /* width: 400px; */
     height: auto;
 }
+
+/* regra responsiva */
+img, .img-grande, .img-pequena, .img-media {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 
 /* CSS */
 body.dark-mode {
   background-color: #121212;
   color: #fff;
 }
+

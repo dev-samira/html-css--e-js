@@ -6,7 +6,7 @@ export function iniciarSPA() {
     link.addEventListener('click', (e) => {
       const destino = link.getAttribute('href');
 
-      // Se for uma das páginas locais, evita recarregar
+      
       if (paginas.includes(destino)) {
         e.preventDefault();
         carregarConteudo(destino);
