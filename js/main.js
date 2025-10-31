@@ -7,3 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
   configurarValidacao();  // Ativa a validação dos formulários
   carregarUsuarios();     // Carrega os dados simulados
 });
+
+
+// JS
+const botao = document.querySelector('#toggle-dark');
+botao.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});

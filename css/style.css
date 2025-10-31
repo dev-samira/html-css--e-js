@@ -108,3 +108,9 @@ footer{background:var(--cor-neutra-escura);color:#e7e2e2;text-align:center;paddi
     width: 400px;
     height: auto;
 }
+
+/* CSS */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
